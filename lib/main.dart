@@ -17,24 +17,28 @@ class MyApp extends StatelessWidget {
     double height = MediaQuery.of(context).size.height;
 
     return Scaffold(
+      backgroundColor: Colors.blueGrey.shade200,
       appBar: AppBar(
-        backgroundColor: Colors.grey.shade700,
+        backgroundColor: Colors.blueGrey.shade700,
       ),
-      body: Stack(
-        children: [
-          stackRow1(width, 720),
-          stackRow2(width, 660),
-          stackRow1(width, 600),
-          stackRow2(width, 540),
-          stackRow1(width, 480),
-          stackRow2(width, 420),
-          stackRow1(width, 360),
-          stackRow2(width, 300),
-          stackRow1(width, 240),
-          stackRow2(width, 180),
-          stackRow1(width, 120),
-          stackRow2(width, 60),
-        ],
+      body: Center(
+        child: Stack(
+          children: [
+            // stackRow1(width, 720),
+            // stackRow2(width, 660),
+            // stackRow1(width, 600),
+            // stackRow2(width, 540),
+
+            stackRow1(width, 480),
+            stackRow2(width, 420),
+            stackRow1(width, 360),
+            stackRow2(width, 300),
+            stackRow1(width, 240),
+            stackRow2(width, 180),
+            stackRow1(width, 120),
+            stackRow2(width, 60),
+          ],
+        ),
       ),
     );
   }
